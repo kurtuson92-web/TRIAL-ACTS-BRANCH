@@ -1,4 +1,13 @@
 balance = 1000
+correct_pin = "1234"
+
+pin = input("Enter PIN: ")
+
+if pin != correct_pin:
+    print("Incorrect PIN.")
+    exit()
+
+print("PIN accepted.")
 
 def cash_in(amount):
     global balance
